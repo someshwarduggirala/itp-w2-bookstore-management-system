@@ -22,7 +22,7 @@ def get_author_by_name(bookstore, name):
 def add_book(bookstore, title, isbn, author):
     book={'title':title,'isbn':isbn,'author':author}
     bookstore['books'].setdefault(title,book)
-    return bookstore['books'][title]
+    return (bookstore['books'][title])
 
 
 def get_book_by_title(bookstore, title):
